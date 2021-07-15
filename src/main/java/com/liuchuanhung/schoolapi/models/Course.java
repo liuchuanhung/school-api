@@ -13,7 +13,7 @@ public class Course {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
-    @Column(name = "name")
+    @Column(name = "course_name")
     private String name;
 
     @Column(name = "description")
