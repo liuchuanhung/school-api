@@ -9,4 +9,5 @@ public interface CourseService {
     Course findCourseById(Long id);
     Course createCourse(Course course);
     List<Course> findAllCourses(int page, int size);
+    List<Course> findAllCoursesByTeacherId(Long teacherId, int page, int size);
 }

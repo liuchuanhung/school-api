@@ -22,6 +22,15 @@ public class CourseController {
         return courseService.findAllCourses(page, size);
     }
 
+    @GetMapping("/teachers/{teacherId}")
+    public List<Course> getCoursesByTeacherId(
+            @RequestParam(defaultValue = "0") int page,
+            @RequestParam(defaultValue = "3") int size,
+            @PathVariable("teacherId") Long teacherId
+    ) {
+        return courseService.findAllCoursesByTeacherId(teacherId, page, size);
+    }
+
     @GetMapping("/{id}")
     public Course retrieveCourseById(@PathVariable("id") Long id) {
         return courseService.findCourseById(id);

@@ -30,4 +30,9 @@ public class CourseServiceImpl implements CourseService {
         Pageable pageable = PageRequest.of(page, size);
         return courseRepository.findAll(pageable).toList();
     }
+
+    public List<Course> findAllCoursesByTeacherId(Long teacherId, int page, int size) {
+        Pageable pageable = PageRequest.of(page, size);
+        return courseRepository.findByTeacherId(teacherId, pageable);
+    }
 }
