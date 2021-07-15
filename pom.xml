@@ -9,10 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.liuchuanhung</groupId>
-	<artifactId>animal-api</artifactId>
+	<artifactId>school-api</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>animal-api</name>
-	<description>Demo project for Spring Boot</description>
+	<name>school-api</name>
+	<description>School API that demonstrates the power of Spring Data JPA</description>
 	<properties>
 		<java.version>1.8</java.version>
 	</properties>
